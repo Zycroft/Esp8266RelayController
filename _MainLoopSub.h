@@ -53,7 +53,7 @@ String RecvUDPMsg(){
 
 void HeartBeat(){
   unsigned long ElapsedTimeHeartBeat =0;
-  Heartbeatinterval = 60000;
+  Heartbeatinterval = 10000;  // send heart beat every 10 seconds
   if (HH_IP.length() > 0) {
     StopTimeHeartBeat = millis();
     ElapsedTimeHeartBeat = StopTimeHeartBeat - StartTimeHeartBeat;

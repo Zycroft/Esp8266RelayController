@@ -2,9 +2,9 @@
 #define _Declarations_H    // (Use a suitable name, usually based on the file name.)
 
 //Declarations for Control Boards
-String ControlBoard = "2"; // Com 6 = 1  ###  Com 5 =2
-String BLKA = "03";
-String BLKB = "04";
+String ControlBoard = "1"; // Com 6 = 1  ###  Com 5 =2
+String BLKA = "01";   // Block control A   Board 1 is BLKA 01 and 02   Board 2 is BLKA 03 and 04 etc.
+String BLKB = "02";   // Block control B
 
 
 // Declarations for Wifi and UDP
