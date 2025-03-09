@@ -3,13 +3,25 @@
 
 //Declarations for Control Boards
 String ControlBoard = "1"; // Com 6 = 1  ###  Com 5 =2
-String BLKA = "01";   // Block control A   Board 1 is BLKA 01 and 02   Board 2 is BLKA 03 and 04 etc.
+String BLKA = "01";   // Block control A   Board 1 is BLKA 01 and 02   Board 2 is BLKA 03 and 04 etc. 3 = 05 06 4 = 07 08
 String BLKB = "02";   // Block control B
+
+//String ControlBoard = "2"; // Com 6 = 1  ###  Com 5 =2
+//String BLKA = "03";   // Block control A   Board 1 is BLKA 01 and 02   Board 2 is BLKA 03 and 04 etc. 3 = 05 06 4 = 07 08
+//String BLKB = "04";   // Block control B
+
+//String ControlBoard = "3"; // Com 6 = 1  ###  Com 5 =2
+//String BLKA = "05";   // Block control A   Board 1 is BLKA 01 and 02   Board 2 is BLKA 03 and 04 etc. 3 = 05 06 4 = 07 08
+//String BLKB = "06";   // Block control B
+
+//String ControlBoard = "4"; // Com 6 = 1  ###  Com 5 =2
+//String BLKA = "07";   // Block control A   Board 1 is BLKA 01 and 02   Board 2 is BLKA 03 and 04 etc. 3 = 05 06 4 = 07 08
+//String BLKB = "08";   // Block control B
 
 
 // Declarations for Wifi and UDP
-const char* ssid = "Williams24G";
-const char* password = "zoey1120";
+const char* ssid = "Williams24G"; //"Williams24G"  TrainWiFi
+const char* password = "zoey1120";  //  Z z
 unsigned int localUdpPort = 4211;  // local port to listen on
 WiFiUDP Udp;
 String RecvMsgIP = "";
@@ -44,6 +56,6 @@ const uint16_t R15 = 0b1000000000000000;// BLK3B
 // Declarations for MainLoopSub
 unsigned long StartTimeHeartBeat = 0;
 unsigned long StopTimeHeartBeat = 0;
-unsigned long Heartbeatinterval = 60000; // 10 seconds = 10,000
+unsigned long Heartbeatinterval = 10000; // 10 seconds = 10,000
 
 #endif // _Declarations_H    // Put this line at the end of your file.

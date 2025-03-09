@@ -32,7 +32,7 @@ String RecvUDPMsg(){
   if (packetSize)
   {
     // receive incoming UDP packets
-    //Serial.printf("Received %d bytes from %s, port %d\n", packetSize, Udp.remoteIP().toString().c_str(), Udp.remotePort());
+    Serial.printf("Received %d bytes from %s, port %d\n", packetSize, Udp.remoteIP().toString().c_str(), Udp.remotePort());
     RecvMsgIP = Udp.remoteIP().toString().c_str();
     int len = Udp.read(incomingPacket, 255);
     if (len > 0)
