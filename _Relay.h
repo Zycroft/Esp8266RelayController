@@ -88,7 +88,8 @@ String getReplyString(String var) {
 }
 
 void relaysOff() {
-  Data = R0F;
+  Data = Data | R0G;
+  //Data = Data & R0F;
   //Serial.println("********RelayOff********");
   //Serial.println(Data,BIN);
   SetRelay();

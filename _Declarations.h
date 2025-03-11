@@ -36,6 +36,8 @@ int oePin = 5;    // oePin - not using this
 uint16_t Data; 
 const uint16_t R0F = 0b0000000000000000;
 const uint16_t R0G = 0b1111111111111111;
+const uint16_t RG1 = 0b0000000000111111;
+const uint16_t RG2 = 0b1111110000000000;
 const uint16_t R00 = 0b0000000000000001;// BLK1A
 const uint16_t R01 = 0b0000000000000010;// BLK1A
 const uint16_t R02 = 0b0000000000000100;// BLK1B
