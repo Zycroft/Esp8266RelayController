@@ -20,8 +20,8 @@ String BLKB = "02";   // Block control B
 
 
 // Declarations for Wifi and UDP
-const char* ssid = "Williams24G"; //"Williams24G"  TrainWiFi
-const char* password = "zoey1120";  //  Z z
+const char* ssid = "TrainWiFi"; //"Williams24G"  TrainWiFi
+const char* password = "Zoey1120";  //  Z z
 unsigned int localUdpPort = 4211;  // local port to listen on
 WiFiUDP Udp;
 String RecvMsgIP = "";
